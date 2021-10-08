@@ -1,11 +1,11 @@
-import express from "express"
-import { Collection, MongoClient } from "mongodb"
-const app = express()
-import dotenv from "dotenv"
+import express from "express";
+import { Collection, MongoClient } from "mongodb";
+const app = express();
+import dotenv from "dotenv";
+dotenv.config();
+const PORT = process.env.PORT;
 
-const PORT = process.env.PORT
 
-dotenv.config()
 const users = [
     {
         "createdAt": "2021-10-01T00:49:47.780Z",
