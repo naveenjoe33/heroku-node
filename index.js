@@ -185,6 +185,7 @@ app.get('/', function (req, res) {
 })
 
 
-app.listen(3000, () => console.log("dtarted server"))
+
+app.listen(process.env.PORT || 5000, () => console.log("started"))
 
 
